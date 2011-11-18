@@ -106,7 +106,8 @@ header nav a.active {
 
 #sidebar {
 /*  background-color: #1abde9;*/
-  background-image: url(http://img.37i.net/pixel_16bde8_40.png);
+/*  background-image: url(http://img.37i.net/pixel_16bde8_40.png);*/
+  background-image: url(http://natalienylon.37i.net/images/sidebar_bg.png);
   padding: 18px;
   float: left;
   margin-left: 50px;
@@ -163,12 +164,14 @@ div.post {
 
 div.post.odd {
 /*  background-color: #12e8dd;*/
-  background-image: url(http://img.37i.net/pixel_12e8dd_40.png);
+/*  background-image: url(http://img.37i.net/pixel_12e8dd_40.png);*/
+  background-image: url(http://natalienylon.37i.net/images/odd_bg.png);
 }
 
 div.post.even {
 /*  background-color: #0df0a0;*/
-  background-image: url(http://img.37i.net/pixel_0df0a0_40.png);
+/*  background-image: url(http://img.37i.net/pixel_0df0a0_40.png);*/
+  background-image: url(http://natalienylon.37i.net/images/even_bg.png);
 }
 
 div.post a {

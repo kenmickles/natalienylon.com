@@ -4,6 +4,11 @@ body {
   font: 16px proxima-nova-condensed, sans-serif
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .clr {
   clear: both;
   display: block;

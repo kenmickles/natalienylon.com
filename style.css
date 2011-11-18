@@ -1,0 +1,160 @@
+body {
+  color: #000;
+  background-color: #18cdc6;
+  font: 16px atrament-web, sans-serif
+}
+
+.clr {
+  clear: both;
+  display: block;
+}
+
+#bg {
+  background-image: url(images/bg.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#top {
+  height: 90px;
+  width: 100%;
+/*  background-color: #ffce18;*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  
+  background-image: linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
+  background-image: -o-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
+  background-image: -moz-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
+  background-image: -webkit-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
+  background-image: -ms-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
+
+  background-image: -webkit-gradient(
+  	linear,
+  	left top,
+  	right top,
+  	color-stop(0.16, rgb(255,172,17)),
+  	color-stop(0.58, rgb(255,229,36))
+  );
+  
+  text-align: center;
+  padding: 10px 0;
+  z-index: 2;
+}
+
+#wrapper {
+  z-index: 2;
+  position: absolute;
+  top: 190px;
+  padding: 0 100px;
+}
+
+header nav {
+  display: block;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin:0 25px;
+}
+
+header nav a:hover {
+  color: #ffe620;
+}
+
+header nav a.active {
+  color: #000;
+}
+
+#sidebar {
+/*  background-color: #1abde9;*/
+  background-image: url(http://img.37i.net/pixel_16bde8_40.png);
+  padding: 18px;
+  float: left;
+  margin-left: 50px;
+}
+
+#sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 46px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 42px;
+}
+
+#sidebar a:hover {
+  color: #ffe620;
+}
+
+#sidebar a.facebook {
+  background-image: url(images/facebook.png);
+}
+
+#sidebar a.myspace {
+  background-image: url(images/myspace.png);
+}
+
+#sidebar a.twitter {
+  background-image: url(images/twitter.png);
+}
+
+#content {
+  width: 630px;
+  float: left;
+}
+
+.post {
+  width: 550px;
+  padding: 35px;
+  margin: 60px 0;
+}
+
+.post.odd {
+/*  background-color: #12e8dd;*/
+  background-image: url(http://img.37i.net/pixel_12e8dd_40.png);
+}
+
+.post.even {
+/*  background-color: #0df0a0;*/
+  background-image: url(http://img.37i.net/pixel_0df0a0_40.png);
+}
+
+.post h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
+
+.post h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.post p {
+  line-height: 1.5em;
+}
+
+.post p a {
+/*  color: #6831e4;*/
+  color: #000;
+  text-decoration: none;
+  background-color: #ffe620;
+}
+
+.post p a:hover {
+  color: #000;
+  background-color: #ffca15;
+}

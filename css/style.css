@@ -154,9 +154,9 @@ div.post {
   width: 500px;
   padding: 35px;
   margin: 60px 0;
-  box-shadow: 0px 0px 6px #298783;
-  -mox-box-shadow: 0px 0px 6px #298783;
-  -webkit-box-shadow: 0px 0px 6px #298783;
+  box-shadow: 0px 0px 4px #298783;
+  -mox-box-shadow: 0px 0px 4px #298783;
+  -webkit-box-shadow: 0px 0px 4px #298783;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;

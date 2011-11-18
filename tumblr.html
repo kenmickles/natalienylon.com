@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {block:SearchPage}{lang:Search results for SearchQuery} |{/block:SearchPage}
+      {block:PostSummary}{PostSummary} |{/block:PostSummary}
+      {Title}
+		</title>
+		
+  	<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+  	<!--[if IE 7 ]>		 <html lang="en" class="no-js ie7"> <![endif]-->
+  	<!--[if IE 8 ]>		 <html lang="en" class="no-js ie8"> <![endif]-->
+  	<!--[if IE 9 ]>		 <html lang="en" class="no-js ie9"> <![endif]-->
+  	<!--[if (gt IE 9)|!(IE)]> <html lang="en" class="no-js"> <![endif]-->		
+		
+		{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  	<link rel="shortcut icon" href="{Favicon}" />
+  	<link rel="apple-touch-icon" href="{PortraitURL-128}"/>
+  	<link rel="alternate" type="application/rss+xml" href="{RSS}" />    
+    <script type="text/javascript" src="http://use.typekit.com/hxa4osv.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://natalienylon.37i.net/_tumblr.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://natalienylon.37i.net/_tumblr.css" />    
+  </head>
+  <body class="{block:IndexPage}index{/block:IndexPage} {block:PermalinkPage}{block:Posts}post {PostType} {TagsAsClasses}{/block:Posts}{/block:PermalinkPage}">
+    
+    <div id="bg"></div>
+    <div id="top">
+      <a href="http://itunes.apple.com/us/album/out-of-control-single/id473800366?uo=4"><img class="ad" src="http://natalienylon.37i.net/images/outofcontrol.jpg" alt="" /></a>
+    </div>
+    
+    <div id="wrapper">
+      
+      <header>
+        <h1><a href="/"><image id="logo" src="http://natalienylon.37i.net/images/natalie_nylon.png" alt="Natalie Nylon" /></a></h1>
+        <nav>
+          <a class="home" href="/">Home</a>
+          <a class="music" href="/music">Music</a>
+          <a class="photos" href="/gallery">Photos</a>
+          <a class="media" href="/tagged/media">Media</a>
+          <a class="bio" href="/about">Bio</a>
+          <a class="tour" href="/tour">Tour</a>
+        </nav>
+      </header>
+
+      <section id="content">
+				{block:Posts}
+					<div class="post {PostType} {block:Photoset}photoset{/block:Photoset} {TagsAsClasses} {block:Odd}odd{/block:Odd} {block:Even}even{/block:Even}">
+						{block:Photo}
+							<p><img src="{PhotoURL-500}" alt="{PhotoAlt}" /></p>
+							<div class="caption">{Caption}</div>
+						{/block:Photo}
+						
+						{block:Photoset}
+							{Photoset-500}
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+						{/block:Photoset}						
+				
+						{block:Text}
+							{block:Title}<h3>{Title}</h3>{/block:Title}
+							<div class="body">{Body}</div>					
+						{/block:Text}
+			
+						{block:Link}
+							<h3><a href="{URL}">↪{Name}</a></h3>
+							{block:Description}
+								<div class="caption">{Description}</div>
+							{/block:Description}
+						{/block:Link}
+			
+						{block:Video}
+							{Video-500}
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+						{/block:Video}
+
+						{block:Audio}
+							{AudioPlayerGrey}
+							{block:Caption}
+								<div class="caption">{Caption}</div>
+							{/block:Caption}
+						{/block:Audio}						
+			
+						{block:Quote}
+						  <p class="quote-text">
+  							<span class="ldquo">&ldquo;</span>{Quote}<span class="rdquo">&rdquo;</span>
+  						</p>
+  						{block:Source}
+  							<p class="source">&mdash;{Source}</p>
+  						{/block:Source}
+						{/block:Quote}
+			
+						{block:Chat}
+							{block:Title}<h3>{Title}</h3>{/block:Title}
+							<div class="lines">
+								{block:Lines}
+									<p class="{Alt} user_{UserNumber}">
+										{block:Label}<label>{Label}</label>{/block:label}
+										{Line}
+									</p>
+								{/block:Lines}
+							</div>
+						{/block:Chat}
+			
+						{block:Answer}
+						{/block:Answer}
+						
+						{block:Date}
+  						<p class="meta">
+  						  <span class="date-tags">
+  						    Posted <em>{TimeAgo}</em>
+  						    {block:HasTags}
+								    in {block:Tags}<a href="{TagURL}">#{Tag}</a>{/block:Tags}</span>
+								  {/block:HasTags}
+								</span>
+								{block:IndexPage}
+  							  <a class="permalink" href="{Permalink}#disqus_thread">∞ Comments</a>
+  							{/block:IndexPage}
+  						</p>
+						{/block:Date}
+						
+					</div>
+				{/block:Posts}
+				
+				{block:PermalinkPage}
+  				{block:PostNotes}
+  					<hr />
+  					{PostNotes}
+  					<hr />
+  				{/block:PostNotes}
+  				
+  				<script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}<div id="disqus_thread"></div>
+  				<script type="text/javascript">
+  					/**
+  						* var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+  						*/
+  					if ( "{JSPermalink}" != '' ) {
+  						(function() {
+  						 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  						 dsq.src = 'http://natalienylon.disqus.com/embed.js';
+  						 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  						})();
+  					}
+  				</script>
+  				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=natalienylon">comments powered by Disqus.</a></noscript>
+  				<!-- <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+  				{/block:Permalink}<script type="text/javascript">
+  				var disqus_shortname = 'natalienylon';
+  				(function () {
+  					var s = document.createElement('script'); s.async = true;
+  					s.src = 'http://natalienylon.disqus.com/count.js';
+  					(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  				}());
+  				</script>
+  			{/block:PermalinkPage}   
+      </section>
+      
+      <section id="sidebar">
+        <nav>
+          <a class="facebook" href="http://facebook.com/NatalieNylon">facebook.com/NatalieNylon</a>
+          <a class="twitter" href="http://twitter.com/NatalieNylon">@NatalieNylon</a>
+          <a class="myspace" href="http://myspace.com/NatalieNylon">myspace.com/NatalieNylon</a>
+        </nav>
+      </section>
+      
+      <div class="clr"></div>
+      
+  		<footer>
+  			<nav>
+  				{block:PreviousPage}
+  					<a class="prev" href="{PreviousPage}">&#171; Previous</a>
+  				{/block:PreviousPage}
+
+  				{block:NextPage}
+  					<a class="next" href="{NextPage}">Next &#187;</a>
+  				{/block:NextPage}
+  			</nav>
+  		</footer>
+    </div>
+    
+    		
+		{block:IndexPage}
+		<script type="text/javascript">
+        var disqus_shortname = 'natalienylon'; 
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+		{/block:IndexPage}
+  </body>
+</html>

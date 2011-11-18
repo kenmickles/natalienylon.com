@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^_tumblr\.js$ /min/?g=tumblr_js [L]
+RewriteRule ^_tumblr\.css$ /min/?g=tumblr_css [L]

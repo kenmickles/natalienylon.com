@@ -168,7 +168,21 @@
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
           }());
           </script>
-        {/block:PermalinkPage}   
+        {/block:PermalinkPage}
+        
+        <!-- Pagination -->
+        <footer>
+          <nav>
+            {block:PreviousPage}
+              <a class="prev" href="{PreviousPage}">↫ Previous</a>
+            {/block:PreviousPage}
+
+            {block:NextPage}
+              <a class="next" href="{NextPage}">Next ↬</a>
+            {/block:NextPage}
+          </nav>
+        </footer>
+                
       </section>
       
       <section id="sidebar">
@@ -180,18 +194,6 @@
       </section>
       
       <div class="clr"></div>
-      
-      <footer>
-        <nav>
-          {block:PreviousPage}
-            <a class="prev" href="{PreviousPage}">&#171; Previous</a>
-          {/block:PreviousPage}
-
-          {block:NextPage}
-            <a class="next" href="{NextPage}">Next &#187;</a>
-          {/block:NextPage}
-        </nav>
-      </footer>
     </div>
     
         

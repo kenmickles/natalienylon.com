@@ -105,6 +105,21 @@ header nav a.active {
   color: #000;
 }
 
+footer {
+  font-size: 24px;
+  height: 1em;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 1px #298783;
+}
+
+footer nav a.prev {
+  float: left;
+}
+
+footer nav a.next {
+  float: right;
+}
+
 #sidebar {
 /*  background-color: #1abde9;*/
 /*  background-image: url(http://img.37i.net/pixel_16bde8_40.png);*/

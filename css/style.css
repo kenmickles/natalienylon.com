@@ -240,6 +240,9 @@ div.post.quote p.source {
   font-style: italic;
 }
 
+div.post p.image a {
+  background-color: transparent;
+}
 
 #flickr-images a {
   background-color: transparent;

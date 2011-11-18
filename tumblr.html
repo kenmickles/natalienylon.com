@@ -60,7 +60,7 @@
 				{block:Posts}
 					<div class="post {PostType} {block:Photoset}photoset{/block:Photoset} {TagsAsClasses} {block:Odd}odd{/block:Odd} {block:Even}even{/block:Even}">
 						{block:Photo}
-							<p><img src="{PhotoURL-500}" alt="{PhotoAlt}" /></p>
+							<p class="image">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</p>
 							<div class="caption">{Caption}</div>
 						{/block:Photo}
 						

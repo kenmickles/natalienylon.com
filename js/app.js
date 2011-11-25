@@ -1,9 +1,9 @@
 // the user id for the flickr user hosting the portfolio set
 // (most easily obtained via http://idgettr.com/)
-FLICKR_USER_ID = '63365181@N00';
+FLICKR_USER_ID = '70738915@N02';
 
 // the id of the portfolio flickr set
-FLICKR_SET_ID = '72157626320511042';
+FLICKR_SET_ID = '72157628149153533';
 
 $(document).ready(function(){
   var tab = null;

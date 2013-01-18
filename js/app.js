@@ -26,6 +26,9 @@ $(document).ready(function(){
   if ( tab ) {
     $('header a.' + tab).addClass('active');
   }
+
+	// how's this for a hack: inject new banner ad because i'm too lazy to update the tumblr theme
+	$('#top').html('<a href="https://itunes.apple.com/us/album/star-crossed-single/id585395508"><img src="http://natalienylon.37i.net/images/starcrossed_banner.jpg" alt=""></a>');
   
   // Music page: add playlist embed
   if ( tab == 'music' ) {

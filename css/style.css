@@ -1,8 +1,12 @@
+html {
+	height: 100%;
+}
+
 body {
   color: #000;
-  background-color: #18cdc6;
-/*  background-color: #1bcec6;*/
+	background-color: #f6e7e2;
   font: 16px proxima-nova-condensed, sans-serif
+	height: 100%;
 }
 
 a {
@@ -12,9 +16,6 @@ a {
 
 a:hover {
   color: #ffe620;
-  -moz-transition: color .1s linear;
-  -webkit-transition: color .1s linear;
-  -o-transition: color .1;
 }
 
 .clr {
@@ -23,9 +24,9 @@ a:hover {
 }
 
 #bg {
-  background-image: url(http://natalienylon.37i.net/images/bg.jpg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
+	background-image: url(http://natalienylon.37i.net/images/starcrossed_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -37,27 +38,12 @@ a:hover {
 #top {
   height: 90px;
   width: 100%;
-  background-color: #ffce18;
   position: absolute;
   right: 0;
   bottom: 0;
   top: 0;
   left: 0;
-  
-  background-image: linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
-  background-image: -o-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
-  background-image: -moz-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
-  background-image: -webkit-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
-  background-image: -ms-linear-gradient(left , rgb(255,172,17) 16%, rgb(255,229,36) 58%);
-
-  background-image: -webkit-gradient(
-  	linear,
-  	left top,
-  	right top,
-  	color-stop(0.16, rgb(255,172,17)),
-  	color-stop(0.58, rgb(255,229,36))
-  );
-  
+	background-color: rgba(246, 226, 215, 0.85);
   text-align: center;
   padding: 10px 0;
   z-index: 2;
@@ -68,7 +54,7 @@ a:hover {
   position: absolute;
   top: 190px;
   padding: 0 100px;
-  width: 865px;
+  width: 900px;
 }
 
 h1 {
@@ -124,15 +110,9 @@ footer nav a.next {
 }
 
 #sidebar {
-/*  background-color: #1abde9;*/
-/*  background-image: url(http://img.37i.net/pixel_16bde8_40.png);*/
-  background-image: url(http://natalienylon.37i.net/images/sidebar_bg.png);
-  padding: 18px;
   float: left;
   margin-left: 50px;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+	margin-top: 52px;
 }
 
 #sidebar a {
@@ -173,37 +153,15 @@ div.post {
   width: 500px;
   padding: 35px;
   margin: 60px 0;
-  box-shadow: 0px 0px 4px #298783;
-  -mox-box-shadow: 0px 0px 4px #298783;
-  -webkit-box-shadow: 0px 0px 4px #298783;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+  box-shadow: 0px 1px 2px #333;
+  border-radius: 1px;
+	background-color: rgba(216, 199, 189, .85);
 }
 
-div.post.odd {
-/*  background-color: #12e8dd;*/
-/*  background-image: url(http://img.37i.net/pixel_12e8dd_40.png);*/
-  background-image: url(http://natalienylon.37i.net/images/odd_bg.png);
-}
-
-div.post.even {
-/*  background-color: #0df0a0;*/
-/*  background-image: url(http://img.37i.net/pixel_0df0a0_40.png);*/
-  background-image: url(http://natalienylon.37i.net/images/even_bg.png);
-}
-
-div.post a {
-  color: #000;
-  text-decoration: none;
-  background-color: #ffe620;
-}
-
-div.post  a:hover {
-  background-color: #ffca15;
-  -moz-transition: background-color .1s linear;
-  -webkit-transition: background-color .1s linear;
-  -o-transition: background-color .1;
+div.post a:hover {
+	color: #aa8fc2;
+	/*background-color: rgba(61, 47, 62, 1);*/
+	background-color: #221a25;
 }
 
 div.post h3 {
@@ -217,21 +175,20 @@ body.post div.post h3 {
   margin-bottom: 12px;
 }
 
-/*div.post h3 a {
-  color: #000;
-  text-decoration: none;
-}*/
-
 div.post p {
   line-height: 1.5em;
   font-size: 18px;
 }
 
 div.post p.meta {
-  color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   margin: 30px 0 0;
   min-height: 1em;
+	opacity: .65;
+}
+
+div.post:hover p.meta {
+	opacity: 1;
 }
 
 div.post p.meta em {
@@ -245,8 +202,6 @@ div.post p.meta a.permalink  {
 div.post p img {
   border: 4px solid #FFFFFF;
   box-shadow: 0 0 3px #888888;
-  -moz-box-shadow: 0 0 3px #888888;
-  -webkit-box-shadow: 0 0 3px #888888;
 }
 
 div.post.quote p.quote-text {
@@ -271,6 +226,4 @@ div.post p.image a {
   margin: 5px;
   border: 2px solid #FFFFFF;
   box-shadow: 0 0 3px #888888;
-  -moz-box-shadow: 0 0 3px #888888;
-  -webkit-box-shadow: 0 0 3px #888888;
 }

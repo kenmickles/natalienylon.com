@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: #ffe620;
+	color: #7f5aa0;
 }
 
 .clr {
@@ -24,7 +24,7 @@ a:hover {
 }
 
 #bg {
-	background-image: url(http://natalienylon.37i.net/images/starcrossed_bg.jpg);
+	background-image: url(http://natalienylon.37i.net/images/starcrossed_bg2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
   position: fixed;
@@ -33,6 +33,17 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+#nn {
+	background-image: url(http://natalienylon.37i.net/images/nn.png);
+	background-repeat: no-repeat;
+	width: 285px;
+	height: 322px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
 }
 
 #top {
@@ -46,11 +57,11 @@ a:hover {
 	background-color: rgba(246, 226, 215, 0.85);
   text-align: center;
   padding: 10px 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 #wrapper {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 190px;
   padding: 0 100px;
@@ -81,7 +92,6 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #ffe620;
   -moz-transition: color .1s linear;
   -webkit-transition: color .1s linear;
   -o-transition: color .1;
@@ -98,7 +108,10 @@ footer {
   height: 1em;
   margin-top: -25px;
   margin-bottom: 50px;
-  text-shadow: 1px 1px 1px #298783;
+}
+
+footer a {
+	text-shadow: 0 1px 0 #333;
 }
 
 footer nav a.prev {
@@ -117,6 +130,7 @@ footer nav a.next {
 
 #sidebar a {
   color: #fff;
+	text-shadow: 0 1px 0 #333;
   text-decoration: none;
   display: block;
   line-height: 46px;
@@ -126,7 +140,7 @@ footer nav a.next {
 }
 
 #sidebar a:hover {
-  color: #ffe620;
+	color: #7f5aa0;
   -moz-transition: color .1s linear;
   -webkit-transition: color .1s linear;
   -o-transition: color .1;  
@@ -156,12 +170,6 @@ div.post {
   box-shadow: 0px 1px 2px #333;
   border-radius: 1px;
 	background-color: rgba(216, 199, 189, .85);
-}
-
-div.post a:hover {
-	color: #aa8fc2;
-	/*background-color: rgba(61, 47, 62, 1);*/
-	background-color: #221a25;
 }
 
 div.post h3 {

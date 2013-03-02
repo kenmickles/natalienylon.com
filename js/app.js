@@ -35,7 +35,7 @@ $(document).ready(function(){
   
   // Music page: add playlist embed
   if ( tab == 'music' ) {
-    $('#content .post .body').append('<object width="450" height="470"> <param name="movie" value="http://www.musicplaylist.us/mc/mp3player_new.swf"></param> <param name="allowscriptaccess" value="never"></param> <param name="wmode" value="transparent"></param> <param name="flashvars" value="config=http%3A%2F%2Fwww.indimusic.us%2Fext%2Fpc%2Fconfig_black.xml&amp;mywidth=450&amp;myheight=470&amp;playlist_url=http%3A%2F%2Fwww.musicplaylist.us%2Fpl.php%3Fplaylist%3D85564584%26t%3D1304532440&amp;wid=os"></param> <embed style="width:450px; visibility:visible; height:470px;" allowScriptAccess="never" src="http://www.musicplaylist.us/mc/mp3player_new.swf" flashvars="config=http%3A%2F%2Fwww.indimusic.us%2Fext%2Fpc%2Fconfig_black.xml&amp;mywidth=450&amp;myheight=470&amp;playlist_url=http%3A%2F%2Fwww.musicplaylist.us%2Fpl.php%3Fplaylist%3D85564584%26t%3D1304532440&amp;wid=os" width="450" height="470" name="mp3player" wmode="transparent" type="application/x-shockwave-flash" border="0"/> </object>');
+    $('#content .post .body').append('<iframe width="300" height="410" style="position: relative; display: block; width: 300px; height: 410px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=3446449114/size=grande3/bgcol=d8c7bd/linkcol=7f5aa0/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://natalienylon.bandcamp.com/album/star-crossed">Star​-​Crossed by Natalie Nylon</a></iframe>');
   }
   // Photo page: add Flickr embed
   else if ( tab == 'photos' ) {
